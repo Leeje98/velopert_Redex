@@ -14,7 +14,7 @@ export const decrease = () => ({ type: DECREASE })
 
 /* 초기 상태 선언 */
 const initialState = {
-  numder: 0,
+  number: 0,
   diff: 1
 }
 
@@ -30,12 +30,12 @@ export default function counter(state = initialState, action) {
     case INCREASE:
       return {
         ...state,
-        numder: state.numder + state.diff
+        number: state.number + state.diff
       }
     case DECREASE:
       return {
         ...state,
-        numder: state.numder - state.diff
+        number: state.number - state.diff
       }
     default:
       return state;
